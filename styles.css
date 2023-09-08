@@ -1,0 +1,45 @@
+html{
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+}
+
+body {
+    background-image: url('download.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+#square{
+    height: 125px;
+    width: 125px;
+    position: relative;
+    border-radius: 15px;
+    background-color: orange;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    
+}
+
+button{
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: orange;
+    z-index: 100;
+    color: white;
+    top: 95%;
+    position: absolute;
+    left: 10px;
+
+}
+
+button:hover{
+    background-color: rgb(155, 106, 21);
+}
