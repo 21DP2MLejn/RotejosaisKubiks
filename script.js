@@ -23,7 +23,7 @@ function ColorChanging() {
   square.style.borderColor = `rgb(${b}, ${g}, ${r})`
 
   function RandomizeColor() {
-    return Math.floor(Math.random() * 256);
+    return Math.floor(Math.random() * 255);
   }
 }
 
@@ -61,7 +61,7 @@ function Rotation() {
     square.style.rotate = `${degrees}deg` 
   
     function RandomizeDegrees() {
-      return Math.floor(Math.random() * 180);
+      return Math.floor(Math.random() * 360);
     }
   }
 
