@@ -36,8 +36,8 @@ body{
 button{
     outline: none;
     border: none;
-    width: 200px;
-    height: 45px;
+    width: 195px;
+    height: 40px;
     border-radius: 5px;
     background-color: orange;
     z-index: 100;
@@ -45,9 +45,11 @@ button{
     top: 95%;
     position: absolute;
     left: 10px;
+    transition: 0.1s;
 
 }
 
 button:hover{
     background-color: rgb(155, 106, 21);
+    transform: scale(1.1);
 }
