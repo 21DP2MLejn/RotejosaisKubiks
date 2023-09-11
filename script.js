@@ -1,6 +1,7 @@
 var Clicks = 0; 
 var button = document.getElementById("click-me");
 var square = document.getElementById("square");
+var Gamefield = document.getElementById("game-field");
 
 button.addEventListener("click", function() {
   ClickCounting();
@@ -30,17 +31,17 @@ function ColorChanging() {
 function Movement() {
     var squareWidth = square.offsetWidth;
     var squareHeight = square.offsetHeight;
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-    var top = Math.random() * (windowHeight - (squareHeight * 2));
-    var left = Math.random() * (windowWidth - (squareWidth * 2));
+    var fieldWidth = Gamefield.offsetWidth;
+    var fieldHeight = Gamefield.offsetHeight;
+    var top = Math.random() * (fieldHeight - (squareHeight * 2));
+    var left = Math.random() * (fieldWidth - (squareWidth * 2));
   
-    if (left + squareWidth > windowWidth) {
-      left = windowWidth - (squareWidth * 2);
+    if (left + squareWidth > fieldWidth) {
+      left = fieldWidth - (squareWidth * 2);
     }
   
-    if (top + squareHeight > windowHeight) {
-      top = windowHeight - (squareHeight * 2);
+    if (top + squareHeight > fieldHeight) {
+      top = fieldHeight - (squareHeight * 2);
     }
   
     if (left < 0) {
@@ -64,9 +65,4 @@ function Rotation() {
       return Math.floor(Math.random() * 360);
     }
   }
-
-
-
-
-
 
